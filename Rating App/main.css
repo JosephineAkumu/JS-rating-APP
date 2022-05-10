@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: bisque;
+  height: 100vh;
+}
+
+body .main_wrapper {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+
+body .main_wrapper .emoji {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+body .main_wrapper .emoji .far {
+  margin: 1px;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+body .main_wrapper .rating {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+body .main_wrapper .rating .fas {
+  color: lightgray;
+  cursor: pointer;
+}
+
+body .main_wrapper .rating .active {
+  color: gold;
+}
+/*# sourceMappingURL=main.css.map */
